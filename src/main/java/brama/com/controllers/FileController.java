@@ -5,6 +5,7 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 
+import brama.com.aws.RDS;
 import brama.com.aws.S3;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,7 +38,8 @@ public class FileController {
                 S3 upldr = new S3();
 
                 upldr.uploadFile();
-
+                RDS conn = new RDS();
+                conn.close();
                 return "You successfully uploaded " + name + "!";
 
 
