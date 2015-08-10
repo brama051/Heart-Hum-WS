@@ -81,11 +81,11 @@ public class S3 {
             /*
              * List the buckets in your account
              */
-            System.out.println("Listing buckets");
+            /*System.out.println("Listing buckets");
             for (Bucket bucket : s3.listBuckets()) {
                 System.out.println(" - " + bucket.getName());
             }
-            System.out.println();
+            System.out.println();*/
 
             /*
              * Upload an object to your bucket - You can easily upload a file to
