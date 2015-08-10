@@ -13,6 +13,9 @@ public class WSResponse {
 
     }
 
+    public WSResponse(){
+
+    }
     public String getType() {
         return type;
     }
@@ -27,5 +30,10 @@ public class WSResponse {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    @Override
+    public String toString(){
+        return "WSResponse [type=" + type + ", content=" + content + "]";
     }
 }
